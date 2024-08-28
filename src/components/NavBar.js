@@ -1,5 +1,6 @@
 import React from "react";
 
+// NavBar Component contains navigation links to different sections of the page
 function NavBar() {
   return (
     <nav>
@@ -9,4 +10,5 @@ function NavBar() {
   );
 }
 
+// Exporting the NavBar component as the default export
 export default NavBar;
