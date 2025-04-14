@@ -2,17 +2,16 @@ import React from "react";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import About from "./About";
-
-// user data
 import user from "../data/user";
-console.log(user);
 
 function App() {
+  const { name, city, color, bio, links } = user;
+
   return (
     <div>
       <NavBar />
-      <Home name={user.name} city={user.city} color={user.color} />
-      <About bio={user.bio} links={user.links} />
+      <Home name={name} city={city} color={color} />
+      <About bio={bio} links={links} />
     </div>
   );
 }
